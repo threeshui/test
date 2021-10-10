@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>扭转和放大</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			body{
+				background-image: url(../img/背景/黑色背景.png);
+			}
+			ul{
+				list-style-type: none;
+				width: 1050px;
+				margin: 10px;
+			}
+			ul li{
+				border: 1px solid white;
+				width: 220px;
+				height: 300px;
+				background-color: white;
+				float: left;
+				margin-right: 40px;
+				position: relative;
+			}
+			ul li a img{
+				display: block;
+				width: 200px;
+				margin-top:10px;
+				margin-left: 10px;
+			}
+			ul li a{
+				display: block;
+				
+				text-decoration: none;
+			}
+			.tag{
+				display: block;
+				position: absolute;
+				bottom:50px;
+				left: 75px;
+			}
+			ul li:hover{
+				transform: scale(1.1);
+				/*transform: rotate(20deg);
+				/*transform: rotateY(180deg);*/
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+		      <li>
+		        <a href="">
+		          <img src="../img/背景/0.gif" >
+		          <span class="tag">Roeland</span>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="">
+		          <img src="../img/背景/2.gif" >
+		          <span class="tag">Roeland</span>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="">
+		          <img src="../img/背景/7.gif" >
+		          <span class="tag">Roeland</span>
+		        </a>
+		      </li>
+		      <li>
+		        <a href="">
+		          <img src="../img/背景/1.gif" >
+		          <span class="tag">Roeland</span>
+		        </a>
+		      </li>
+		    </ul>
+	</body>
+</html>

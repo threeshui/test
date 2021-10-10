@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>内置对象-date</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var myDate = new Date();
+			
+			//getdate 指的是多少号
+			//getday 指的是星期几
+			console.log(myDate.getDate());
+			console.log(myDate.getDay());
+			console.log(myDate.getMonth());
+			console.log(myDate.getTime());
+	
+			console.log(myDate.toDateString());
+			console.log(myDate.toGMTString());
+			console.log(myDate.toLocaleTimeString());
+			
+			//请计算一下电脑计算机1-10000000000累加时用的时间
+			var myDate1 =new Date();
+			var sum=0;
+			for (var i=1;i<10000000000;i++){
+				sum+=i
+			}
+			var myDate2 = new Date();
+			var c=myDate2.getTime()-myDate1.getTime();
+			console.log(myDate1.getTime());
+			console.log(myDate2.getTime());
+			console.log(c);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>内置对象--Array</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//定义
+			var myArr1=new Array();
+			var myArr2=new Array(3);
+			var myArr3=new Array(1,3,5);
+		
+			console.log(myArr1);
+			console.log(myArr2);
+			console.log(myArr3);
+			
+			myArr1[1]=2;
+			myArr1[10]=2;
+			console.log(myArr1);
+		
+			//在1-100内随机生成10个数放入数组
+			var myArr =new Array();
+			var myRan=0;
+			for (var i=0;i<10;i++) {
+				myRan  =   Math.floor(Math.random()*(100-1+1)+1);
+				myArr[i]=myRan;
+			}
+			console.log(myArr);
+			//在1-100内随机生成10个数放入奇数偶数组
+			//在1-100内随机生成10个数放入数组冒泡排序
+		</script>
+	</body>
+</html>

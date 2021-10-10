@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单</title>
+	</head>
+	<body>
+		<form action="1.php" method="post">
+			<h1 align="center">个人信息表</h1>
+			<table border="1px" width="500px" align="center">
+				<tr>
+					<td>
+						<labe1 for="n1">姓名</labe1>
+						</td>
+					<td>
+						<input type="text" name="n1" id="n1" placeholder="请输入你的姓名" 
+						maxlength="20" size="30" readonly="readonly" disable="disabled"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="age1">少年年龄</label>
+						</td>
+					<td>
+						<input type="text" name="age1" id="age1" placeholder="请输入你的年龄"  size="30"/>
+					</td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td>
+						<input type="password" name="" maxlength="6" size="30" />
+					</td>
+				</tr>
+				<tr>
+					<td>生日</td>
+					<td>
+						<input type="date" name="" id="" value="" />
+						<input type="datetime-local" name="" id="" value="" />
+					</td>
+				</tr>
+				<tr>
+					<td>性别</td>
+					<td>
+						<input type="radio" name="sexy" id="male" value="0"/><label for="male">男</label>
+						<input type="radio" name="sexy" id="female" value="1"/><label for="female">女</label>
+					</td>
+				</tr>
+				<tr>
+					<td>爱好</td>
+					<td>
+						<input type="checkbox" name="hobby" id="b1" value="1" />篮球
+						<input type="checkbox" name="hobby" id="1" value="2" />足球
+						<input type="checkbox" name="hobby" id="t1" value="3" />乒乓球
+					</td>
+				</tr>
+				<tr>
+					<td>
+						所在省份
+						</td>
+						<td>
+							<select name="p1">
+								<optgroup label="山西省">
+									<option value="1">运城</option>
+									<option value="2">晋中</option>
+									<option value="3">晋城</option>
+									<option value="4">太原</option>
+									<option value="5" selceted="selected">吕梁</option>
+								</optgroup>
+								<optgroup label="河北省">
+									<option value="1">运城</option>
+									<option value="2">晋中</option>
+									<option value="3">晋城</option>
+									<option value="4">太原</option>
+									<option value="5" selceted="selected">吕梁</option>
+								</optgroup>
+				</tr>
+			</table>
+		
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>n的阶乘</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var x=prompt("请输入一个正整数");
+			function n(x){
+				if(x<2){
+					return 1;
+				}
+				else{
+					return x*n(x-1);
+				}
+			}
+			console.log(n(x));
+		</script>
+	</body>
+</html>

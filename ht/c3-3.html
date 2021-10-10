@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二级导航栏</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+			}
+			/*总的框架设置*/
+			.menu>ul{
+				width: 1440px;
+				/*border: 1px solid black;*/
+				margin: 50px auto;
+			}
+			/*列表样式*/
+			.menu ul li{
+				list-style-type: none;
+				background-color:#06c;
+				width: 200px;
+				height: 30px;
+				border: 1px solid #999;
+				float: left;
+				position: relative;
+			}
+			/*所有的超级链接进行设置*/
+			.menu ul li a{
+				display: block;
+				text-align: center;
+				color: white;
+				padding: 4px 16px;
+				text-decoration: none;
+				font-size: 16px;
+			}
+			/**二级列表UL隐藏起来 二级列表框架位置*/
+			.menu>ul>li>ul{
+				display: none;
+				position: absolute;
+				top: 32px;
+			}
+			/*一级列表悬停效果*/
+			.menu>ul>li:hover ul{
+				display: block;
+			}
+			/*一级列表间距调节*/
+			.meune>ul>li{
+				margin-right: 2px;
+			}
+			/*二级列表间距调节*/
+			.menu>ul>li>ul>li{
+				margin-bottom: 2px;
+			}
+			a:hover{
+				background-color: #002099;
+				color: #ff0;
+				border-left: 2px solid gold;
+				border-right: 2px solid gold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu">
+		<ul>
+			<li><a href="B20110603180530.html">学院概况</a>
+				<ul>
+					<li><a href="#">HTML5</a></li>
+					<li><a href="#">CSS</a></li>
+					<li><a href="#">Javascript</a></li>
+					<li><a href="#">Ajax</a></li>
+					<li><a href="#">jQuery</a></li>
+				</ul>
+			</li>
+			<li><a href="B20110603181141.html">党政机构</a>
+			<ul>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">Ajax</a></li>
+				<li><a href="#">jQuery</a></li>
+			</ul>
+			</li>
+			<li><a href="B20110603181224.html">院系设置</a>
+			<ul>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">Ajax</a></li>
+				<li><a href="#">jQuery</a></li>
+			</ul>
+			</li>
+			<li><a href="B20110603181246.html">人才培养</a>
+			<ul>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">Ajax</a></li>
+				<li><a href="#">jQuery</a></li>
+			</ul>
+			</li> 
+			<li><a href="B20120824171519.html">师资队伍</a>
+			<ul>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">Ajax</a></li>
+				<li><a href="#">jQuery</a></li>
+			</ul>
+			</li>
+			<li><a href="B20110603181916.html">教学资源</a>
+			<ul>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">Ajax</a></li>
+				<li><a href="#">jQuery</a></li>
+			</ul>
+			</li> 
+			<li><a href="B20110603181812.html">校园文化</a>
+			<ul>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">Ajax</a></li>
+				<li><a href="#">jQuery</a></li>
+			</ul>
+			</li>
+		</ul>
+	</body>
+</html>

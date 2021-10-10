@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>复合选择器--交集、并集、后代、子集</title>
+		<style type="text/css">
+			/*交集，没有空格，要求第一个必须是标签选择器*/
+			/*p.p1{
+				color:blue;
+			}*/
+			/*并集 用，来连接*/
+			/*
+			p,h2{
+				color: blue;
+			}*/
+			/*后代 用空格*/
+			/*div span{
+				font-size: 80px;
+			}*/
+			/*子选择器 只能是父子关系 用>连接*/
+			li>span{
+				font-size: 5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="p1">段落1</p>
+		<p class="p2">段落2</p>
+		<h2 class="p1">标题1</h2>
+		
+		<div>
+			<span>运城学院是个好大学1</span>
+			<ul>
+				<li><span>运城学院是个好大学2</span></li>
+			</ul>
+		</div>
+	</body>
+</html>

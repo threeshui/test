@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定位元素</title>
+	</head>
+	<body>
+		<p class="p1">段落1</p>
+		<p class="p1" id ="id1">段落2</p>
+		<p class="p1">段落3</p>
+		<p>段落4</p>
+		<!--
+		任务1：类名为p1的元素内容变成新段落
+		任务2：把段落2的内容变成2
+		任务3：所有段落变成红色字体-->
+		<a href="javascript:void(0);" onclick="fn1()">定位类</a>
+		<a href="javascript:void(0);" onclick="fn2()">定位类</a>
+		<a href="javascript:void(0);" onclick="fn3()">定位类</a>
+		<script type="text/javascript">
+			function fn1(){
+			var myp=document.getElementsByClassName('p1');
+			for(var i=0;i<myp.length;i++){
+				myp[i].innerText="新段落"+(i+1);
+			}
+		}
+		function fn2(){
+			var myp =document.getElementById('id1');
+			myp.innerText=2;
+		}
+		function fn3(){
+			var myp =document.getElementsByTagName('p');
+			for(var i=0;i<myp.length;i++){
+				myp[i].style.color="red";
+			}
+			document.body.style.background="black";
+		}
+		</script>
+	</body>
+</html>

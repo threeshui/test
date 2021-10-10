@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>成绩等级</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var cj=prompt("请输入你的成绩:");
+			var dengji = parseInt(cj/10);
+			if(cj>0&&cj<100){
+				switch (dengji){
+					case 10: case 9:
+						console.log("优秀"); break;
+					case 8: case 7:
+						console.log("良好"); break;
+					case 6：
+						console.log("及格"); break;
+					default:
+						console.log("不及格"); break;
+				}
+			}
+			else{
+				console.log("你的成绩是认真的么？");
+			}
+		</script>
+	</body>
+</html>

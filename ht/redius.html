@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>圆角边框+阴影</title>
+		<style type="text/css">
+			/*border-radius
+			第一个值为水平
+			第二个值为垂直*/
+			div{
+				margin-bottom: 30px;
+			}
+			.div1{
+				width: 150px;
+				height: 100px;
+				border: 1px solid blue;
+				border-top-left-radius: 40px 20px;
+				border-bottom-right-radius: 20px;
+			}
+			.div2{
+				width: 300px;
+				height: 50px;
+				border-radius: 25px;
+				border: 2px solid #a1a1a1;
+				background-color: #ddd;
+				text-indent: 2em;
+			}
+			/*box-shadow
+			第一个值为水平偏移
+			第二个值为垂直偏移
+			第三个值为模糊距离
+			第四个值为颜色
+			*/
+			.div3{
+				width: 300px;
+				height:100px;
+				background-color: #f90;
+				border-radius: 25px;
+				box-shadow: 30px 10px #888;
+				float: left;
+				margin-right: 80px;
+			}
+			h1{
+				text-shadow: 2px 2px 8px #f90;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>高大上的布局</h1>
+		<div class="div1"></div>
+		<div class="div2">我们很快要开学了</div>
+		<div class="div3"></div>
+	
+	</body>
+</html>

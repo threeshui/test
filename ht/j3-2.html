@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>停止</title>
+	</head>
+	<body onload="fn1()">
+	<label id="lblclock"></label>
+	<a href="javascript:void(0);" onclick="mystop()">停止</a>
+	<script type="text/javascript">
+		var timeid;
+		function fn(){
+			var mylbl=document.getElementById('lblclock');
+			var myDate=new Date();
+			mylbl.innerText=myDate.toLocaleString();
+			timeid=window.seTimeout('fn1()',1000);
+		}
+		function mystop(){
+			window.clearTimeout(timeid);
+		}
+	</script>
+	</body>
+</html>

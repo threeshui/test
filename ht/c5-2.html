@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表格多样化</title>
+		<style type="text/css">
+			table{
+				border:1px solid black;
+				width: 400px;
+			}
+			/* 立体颜色*/
+			tbdy tr{
+				background-color: #ccc;
+			}
+			th,td{
+				border: 2px solid #eee;
+				border-bottom-color:#666;
+				border-right-color: #666;
+				text-align: center;
+				/*height: 30px;*/
+			}
+			/*tbody tr*/.even{
+				background-color: #aaa;
+				
+			}
+			caption{
+				font-family: "方正喵呜体";
+				font-size: 20px;
+				font-weight: 700;
+				text-shadow: 2px 2px 6px pink;
+			}
+			tbody tr:hover td,thead tr:hover th{
+				background-color: aquamarine;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>这是一个多彩的表格</caption>
+			<thead>
+				<tr>
+					<th>学号</th>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>年龄</th>
+					<th>家庭住址</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2018061025</td>
+					<td>裴怡淼</td>
+					<td>男</td>
+					<td>19</td>
+					<td>山西晋中</td>
+				</tr>
+				<tr class="even">
+					<td>2018061025</td>
+					<td>裴怡淼</td>
+					<td>男</td>
+					<td>19</td>
+					<td>山西晋中</td>
+				</tr>
+				<tr>
+					<td>2018061025</td>
+					<td>裴怡淼</td>
+					<td>男</td>
+					<td>19</td>
+					<td>山西晋中</td>
+				</tr>
+				<tr class="even">
+					<td>2018061025</td>
+					<td>裴怡淼</td>
+					<td>男</td>
+					<td>19</td>
+					<td>山西晋中</td>
+				</tr>
+				<tr>
+					<td>2018061025</td>
+					<td>裴怡淼</td>
+					<td>男</td>
+					<td>19</td>
+					<td>山西晋中</td>
+				</tr>
+				<tr class="even">
+					<td>2018061025</td>
+					<td>裴怡淼</td>
+					<td>男</td>
+					<td>19</td>
+					<td>山西晋中</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>totle</td>
+					<td colaspan="4">共有6条记录</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
